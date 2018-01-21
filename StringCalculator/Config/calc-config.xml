@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+<!-- <bean/> definitions here -->
+
+<bean id="persist" class="com.calc.persist.PersistList">
+<property name="input"><value>input.txt</value></property>
+</bean>
+
+<bean id="entity" class="com.calc.entity.Entity">
+</bean>
+<bean id="append" class="com.calc.processor.AppendName"></bean>
+<bean id="change" class="com.calc.processor.ChangeName"></bean>
+<bean id="read" class="com.calc.processor.ReadName"></bean>
+<bean id="split" class="com.calc.processor.SplitName"></bean>
+</beans>
